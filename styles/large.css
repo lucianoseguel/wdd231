@@ -139,5 +139,45 @@ border-radius: 10px;
 
 
 
+.main-container section:nth-child(3){
+display:flex;
+width: 80vw;
+flex-direction: column;
+}
+
+
+
+
+/* Web certificate courses */
+
+
+#filter-buttons{
+    display: flex;
+    padding: 1em;
+    justify-content: space-around;
+
+}
+
+
+#filter-buttons button{
+
+    font-size: 30px;
+}
+
+#course-list{
+display: flex;
+gap: 1em;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+
+.course-button{
+
+    font-size: 30px;
+
+}
+
+
 
 

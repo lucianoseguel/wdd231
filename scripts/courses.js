@@ -77,3 +77,52 @@ const courses = [
         completed: false
     }
 ]
+
+
+
+
+        // Function for rendering in screen
+        function showcourses(courseArray) {
+            const courseListDiv = document.getElementById('course-list');
+            courseListDiv.innerHTML = ''; // set clear 
+
+            courseArray.forEach(course => {
+                
+                const courseDiv = document.createElement('div');
+                courseDiv.className = 'course-item';
+
+                if(course.completed == true){
+                    courseDiv.innerHTML = `
+                   <button class="course-button"> ✅ ${course.subject}  ${course.number}  </button>
+                `;
+
+               } else {
+
+                courseDiv.innerHTML = `
+                   <button class="course-button">  ${course.subject}  ${course.number}  </button>
+                `;
+               }
+                
+                courseListDiv.appendChild(courseDiv);
+            });
+        }
+
+        // Filter function
+        function filterCourses(filter) {
+            let filtered;
+
+            if (filter == 'all') {
+                filtered = courses; 
+            } else if (filter == 'CSE') {
+                filtered = courses.filter(course => course.subject == 'CSE');
+            } else if (filter == 'WDD') {
+                filtered = courses.filter(course => course.subject == 'WDD');
+            }
+
+            //Returning courses
+            showcourses(filtered);
+        }
+
+
+// set starting loading page
+        filterCourses('all');
