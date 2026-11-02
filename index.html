@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,56 +9,66 @@
     <meta name="author" content="Luciano Seguel">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
     <header>
         <img src="images/luciano-ico.svg" alt="Site Logo" width="50" height="50">
         <span>Luciano Seguel</span>
-           <a href="#" id="menu"></a>
-            <nav class="navigation">
-            
+        <a href="#" id="menu"></a>
+        <nav class="navigation">
+
             <a href="#" class="active">Home</a>
             <a href="">Chamber Project</a>
             <a href="">Final Project</a>
-            
-            
-            </nav>
+
+
+        </nav>
     </header>
 
     <main>
         <h1>Home</h1>
-<!-----Start main container in main section--->
-            <section class="main-container">
+        <!-----Start main container in main section--->
+        <section class="main-container">
 
-                <section>
-                    <!-----About me--->
-                    <h2>About me</h2>
-                    <p>I am Luciano Seguel from Mendoza, Argentina. My driving force is problem-solving, a quality that I actively apply in software development. My fascination with programming began at the age of 15 while exploring the world of video games, a path that has driven me to turn my passion into a career. Currently, I really enjoy exploring new IT tools and maintaining a balance with outdoor activities like walks and swimming.</p>
-                </section>
+            <section>
+                <!-----About me--->
+                <h2>About me</h2>
+                <p>I am Luciano Seguel from Mendoza, Argentina. My driving force is problem-solving, a quality that I
+                    actively apply in software development. My fascination with programming began at the age of 15 while
+                    exploring the world of video games, a path that has driven me to turn my passion into a career.
+                    Currently, I really enjoy exploring new IT tools and maintaining a balance with outdoor activities
+                    like walks and swimming.</p>
+            </section>
 
-                <section>
-                     <!-----Student Photo--->
+            <section>
+                <!-----Student Photo--->
 
-                    <h2>Student photo</h2>
-                    <img src="images/student_photo.jpg" alt="Luciano Seguel Photo">
+                <h2>Student photo</h2>
+                <img src="images/student_photo.jpg" alt="Luciano Seguel Photo">
 
-                </section>
+            </section>
 
-                <section>
-                    <!-----Certificates and courses completed--->
+            <section>
+                <!-----Certificates and courses completed--->
 
-                    <h2>Web Certificate Resources</h2>
-                    
-                    <div id="filter-buttons">
-                        <button onclick="filterCourses('all')">All Courses</button>
-                        <button onclick="filterCourses('CSE')">CSE Courses</button>
-                        <button onclick="filterCourses('WDD')">WDD Courses</button>
-                    </div>
+                <h2>Web Certificate Resources</h2>
+
+                <div id="filter-buttons">
+                    <button onclick="filterCourses('all')">All Courses</button>
+                    <button onclick="filterCourses('CSE')">CSE Courses</button>
+                    <button onclick="filterCourses('WDD')">WDD Courses</button>
+                </div>
                 <!-----Course list-->
-            <div id="course-list"></div>
+                <div id="course-list">
+
+                </div>
+
+                <p id="credit_container"></p>
 
 
             </section>
@@ -66,13 +77,13 @@
     <footer>
         <div>
             <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                <img src="images/github.svg" alt="GitHub">
+                <img src="images/github-ico.png" alt="GitHub" class="ico-footer">
             </a>
             <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
-                <img src="images/linkedin.svg" alt="LinkedIn">
+                <img src="images/linkedin-ico.png" alt="LinkedIn" class="ico-footer">
             </a>
             <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
-                <img src="images/instagram.svg" alt="Instagram">
+                <img src="images/instagram-ico.png" alt="Instagram" class="ico-footer">
             </a>
         </div>
 
@@ -87,5 +98,5 @@
     <script src="scripts/menu.js"></script>
     <script src="scripts/courses.js"></script>
 </body>
-</html>
 
+</html>

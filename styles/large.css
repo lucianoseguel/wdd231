@@ -1,11 +1,11 @@
-:root{
+:root {
 
---main-font--: "Roboto", sans-serif;
---primary_color--: #d4a373ff;
---seconday_color--: #ccd5aeff;
---background_color--: #faedcdff;
---font_color--: #faedcdff;
---alternative_font_color--: #727171;  
+    --main-font--: "Roboto", sans-serif;
+    --primary_color--: #d4a373ff;
+    --seconday_color--: #ccd5aeff;
+    --background_color--: #faedcdff;
+    --font_color--: #faedcdff;
+    --alternative_font_color--: #727171;
 
 
 
@@ -14,38 +14,39 @@
 
 
 
-*{
-font-family: var(--main-font--);
-box-sizing: border-box;
-text-decoration: none;
+* {
+    font-family: var(--main-font--);
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-html, body{
-padding: 0;
-margin: 0;
+html,
+body {
+    padding: 0;
+    margin: 0;
 }
 
 
 
 /* --------------------- Header Styles --------------------- */
 
-header{
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     background-color: var(--primary_color--);
-    
+
 }
 
 
-.navigation{
+.navigation {
     display: block;
-    
+
     align-content: center;
 }
 
-nav a{
+nav a {
     width: 100%;
     height: 100%;
     padding: 5px 10px;
@@ -55,12 +56,11 @@ nav a{
 
 }
 
-nav a:hover{
+nav a:hover {
     color: var(--alternative_font_color--);
     background-color: var(--seconday_color--);
     width: 110%;
     transition: all 0.3s ease
-    
 }
 
 
@@ -73,39 +73,40 @@ nav a:hover{
 /* ----------MAIN CONTENT------------ */
 
 
-h1{
+h1 {
 
-text-align: center;
+    text-align: center;
 }
 
-.main-container{
-display: flex;
-flex-direction: row; /* Make it a column container */
-flex-wrap: wrap;
-gap: 1rem;
-justify-content: center;
+.main-container {
+    display: flex;
+    flex-direction: row;
+    /* Make it a column container */
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
 }
 
-.main-container section:nth-child(1){
-display:flex;
-flex-direction: column;
-max-width: 50%;
-
-}
-
-
-.main-container section:nth-child(1) p{
-padding: 1rem;
+.main-container section:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
 
 }
 
-.main-container section:nth-child(2){
-display:flex;
-flex-direction: column;
-max-width: 50%;
+
+.main-container section:nth-child(1) p {
+    padding: 1rem;
+
 }
 
-.main-container section:nth-child(2) img{
+.main-container section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.main-container section:nth-child(2) img {
 
     max-width: 80%;
     margin: 1rem auto;
@@ -118,31 +119,33 @@ max-width: 50%;
 
 
 
-.main-container section{
-padding: 0;
-border: solid var(--background_color--);
-border-radius: 10px;
-border-top: 0;
+.main-container section {
+    padding: 0;
+    border: solid var(--background_color--);
+    border-radius: 10px;
+    border-top: 0;
 }
 
 
 
-.main-container section h2{
-margin: 0;
-padding: 1rem;
-text-align: center;
-width: 100%;
-background-color: var(--primary_color--);
-color: white;
-border-radius: 10px;
+.main-container section h2 {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    background-color: var(--primary_color--);
+    color: white;
+    border-radius: 10px;
 }
 
 
 
-.main-container section:nth-child(3){
-display:flex;
-width: 80vw;
-flex-direction: column;
+.main-container section:nth-child(3) {
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    justify-content: space-around;
+
 }
 
 
@@ -151,33 +154,65 @@ flex-direction: column;
 /* Web certificate courses */
 
 
-#filter-buttons{
+#filter-buttons {
     display: flex;
     padding: 1em;
     justify-content: space-around;
+    flex-wrap: wrap;
+
 
 }
 
 
-#filter-buttons button{
+#filter-buttons button {
 
     font-size: 30px;
+    padding: 3px 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary_color--);
+    color: white;
 }
 
-#course-list{
-display: flex;
-gap: 1em;
-flex-wrap: wrap;
-justify-content: center;
+#course-list {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
-.course-button{
+.course-button {
 
     font-size: 30px;
+    border-radius: 10px;
+    padding: 3px 5px;
 
 }
 
+#credit_container{
+margin: auto;
+}
 
 
+/**--------------------------------------------
+ **               Footer
+ *---------------------------------------------**/
 
+
+footer{
+    margin-top: 3em;
+    display: flex;
+flex-direction: column;
+background-color: var(--primary_color--);
+width: 100%;
+margin: auto;
+}
+
+footer *{
+margin: 0.5em auto;
+}
+
+.ico-footer{
+max-width: 50px;
+}

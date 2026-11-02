@@ -81,48 +81,97 @@ const courses = [
 
 
 
-        // Function for rendering in screen
-        function showcourses(courseArray) {
-            const courseListDiv = document.getElementById('course-list');
-            courseListDiv.innerHTML = ''; // set clear 
+// Function for rendering in screen
+function showcourses(courseArray) {
+    const course_list_container = document.getElementById('course-list');
+    course_list_container.innerHTML = ''; // set clear 
 
-            courseArray.forEach(course => {
-                
-                const courseDiv = document.createElement('div');
-                courseDiv.className = 'course-item';
 
-                if(course.completed == true){
-                    courseDiv.innerHTML = `
+    courseArray.forEach(course => {
+
+        const course_container = document.createElement('div');
+        course_container.className = 'course-item';
+
+        if (course.completed == true) {
+
+            course_container.innerHTML = `
                    <button class="course-button"> ✅ ${course.subject}  ${course.number}  </button>
                 `;
 
-               } else {
+        } else {
 
-                courseDiv.innerHTML = `
-                   <button class="course-button">  ${course.subject}  ${course.number}  </button>
+            course_container.innerHTML = `
+                   <button class="course-button"> 🏗️ ${course.subject}  ${course.number}  </button>
                 `;
-               }
-                
-                courseListDiv.appendChild(courseDiv);
-            });
         }
 
-        // Filter function
-        function filterCourses(filter) {
-            let filtered;
+        course_list_container.appendChild(course_container);
 
-            if (filter == 'all') {
-                filtered = courses; 
-            } else if (filter == 'CSE') {
-                filtered = courses.filter(course => course.subject == 'CSE');
-            } else if (filter == 'WDD') {
-                filtered = courses.filter(course => course.subject == 'WDD');
-            }
+    });
 
-            //Returning courses
-            showcourses(filtered);
-        }
+
+
+
+
+
+
+
+}
+
+// Filter function
+function filterCourses(filter) {
+    let filtered;
+
+    if (filter == 'all') {
+        filtered = courses
+
+
+        const totalCredits = filtered
+            .filter(course => course.completed == true)
+            .reduce((accomulate, course) => accomulate + course.credits, 0)
+
+
+        const credit_container = document.getElementById('credit_container')
+        credit_container.innerHTML = `<p>Total Credits: ${totalCredits}</p>`
+
+
+    } else if (filter == 'CSE') {
+        filtered = courses.filter(course => course.subject == 'CSE')
+
+
+        const totalCredits = filtered
+            .filter(course => course.completed == true)
+            .reduce((accomulate, course) => accomulate + course.credits, 0);
+
+
+        const credit_container = document.getElementById('credit_container')
+        credit_container.innerHTML = `<p>Total Credits: ${totalCredits}</p>`
+    } else if (filter == 'WDD') {
+        filtered = courses.filter(course => course.subject == 'WDD')
+
+
+        const totalCredits = filtered
+            .filter(course => course.completed == true)
+            .reduce((accomulate, course) => accomulate + course.credits, 0);
+
+
+        const credit_container = document.getElementById('credit_container')
+        credit_container.innerHTML = `<p>Total Credits: ${totalCredits} </p>`
+    }
+
+    //Returning courses
+    showcourses(filtered);
+
+
+}
 
 
 // set starting loading page
-        filterCourses('all');
+filterCourses('all');
+
+
+// Last modified function
+
+let lastmod = document.getElementById('lastModified')
+
+lastmod.textContent =  `Last Modified: ${document.lastModified}`
