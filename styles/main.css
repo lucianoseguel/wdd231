@@ -123,4 +123,18 @@ nav {
 	content: "X";
 }
 
+/**--------------------------------------------
+ **               MAIN RESPONSIVE
+ *---------------------------------------------**/
+
+.main-container *{
+
+   max-width: 90vw;
+    flex-direction: column;
+
 }
+
+}
+
+
+
