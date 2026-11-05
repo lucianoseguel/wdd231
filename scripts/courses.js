@@ -175,3 +175,10 @@ filterCourses('all');
 let lastmod = document.getElementById('lastModified')
 
 lastmod.textContent =  `Last Modified: ${document.lastModified}`
+
+//Current year function
+
+const current_year = document.getElementById("currentyear");
+
+
+current_year.textContent = new Date().getFullYear()
