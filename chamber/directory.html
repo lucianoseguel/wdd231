@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 231 - Web Frontend Development</title>
+    <meta name="description" content="Mendoza Chamber of commerce to connect local bussiness with local people here in mendoza">
+    <meta name="author" content="Luciano Seguel">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/directory-base.css">
+     <link rel="stylesheet" href="styles/directory-large.css">
+     <link rel="shortcut icon" href="images/mendoza-logo.png" type="image/png">
 </head>
+
 <body>
-    
+    <header>
+        <img src="images/mendoza-logo.png" alt="Site Logo" width="50" height="50">
+        <span>Mendoza Chamber of commerce</span>
+        <a href="#" id="menu"></a>
+        <nav class="navigation">
+
+            <a href="#" class="active">Home</a>
+            <a href="chamber/directory.html">Chamber Project</a>
+            <a href="#">Final Project</a>
+
+
+        </nav>
+    </header>
+
+    <main>
+        <h1>Directory</h1>
+        <!-----Start main container in main section--->
+        <div>
+            <button>Grid</button>
+            <button>List</button>
+        </div>
+        <section>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/github-ico.png" alt="GitHub" class="ico-footer">
+            </a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/linkedin-ico.png" alt="LinkedIn" class="ico-footer">
+            </a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram-ico.png" alt="Instagram" class="ico-footer">
+            </a>
+        </div>
+
+        <div>
+            <p>&copy; <span id="currentyear"></span> | Luciano Seguel | Mendoza, Argentina</p>
+        </div>
+
+        <div>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/courses.js"></script>
 </body>
+
 </html>

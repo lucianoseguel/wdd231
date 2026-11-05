@@ -1,0 +1,92 @@
+[
+  {
+    "business_name": "Bodegas del Valle",
+    "business_tag_name": "Viticultura y Vino",
+    "email": "bodegasvalle@example.com",
+    "phone": "+54 261 555-1234",
+    "url": "https://www.bodegasdelvalle.com.ar",
+    "image": "",
+    "membership_level": "Gold",
+    "description": "Production and commercialization of high-quality wines from the Mendoza region, focused on organic methods."
+  },
+  {
+    "business_name": "Muebles Modernos Mendoza",
+    "business_tag_name": "Muebles y Decoración",
+    "email": "muebles.mendoza@example.com",
+    "phone": "+54 261 555-5678",
+    "url": "https://www.mueblesmodernos.com.ar",
+    "image": "",
+    "membership_level": "Silver",
+    "description": "Design, manufacturing, and sale of modern and contemporary furniture for the home in the province of Mendoza."
+  },
+  {
+    "business_name": "Café Central",
+    "business_tag_name": "Gastronomy y Cafeterías",
+    "email": "cafe.central@example.com",
+    "phone": "+54 261 555-9012",
+    "url": "https://www.cafecentralmendoza.com",
+    "image": "",
+    "membership_level": "Member",
+    "description": "Artisanal cafeteria that offers local products and a cozy atmosphere for social gathering."
+  },
+  {
+    "business_name": "Servicios Legales Andinos",
+    "business_tag_name": "Abogados y Consultoría",
+    "email": "legales.andinos@example.com",
+    "phone": "+54 261 555-3456",
+    "url": "https://www.legalesandinos.com",
+    "image": "",
+    "membership_level": "Gold",
+    "description": "They offer specialized legal advice in real estate and commercial law for regional clients."
+  },
+  {
+    "business_name": "Textiles del Sur",
+    "business_tag_name": "Textil y Confección",
+    "email": "textilesdelsur@example.com",
+    "phone": "+54 261 555-7890",
+    "url": "https://www.textilesdelsur.com",
+    "image": "",
+    "membership_level": "Silver",
+    "description": "Fabrication and supply of high-quality textiles for the regional textile industry."
+  },
+  {
+    "business_name": "TecnoSoluciones IT",
+    "business_tag_name": "Tecnología y Software",
+    "email": "tecnosoluciones@example.com",
+    "phone": "+54 261 555-2345",
+    "url": "https://www.tecnosoluciones.com",
+    "image": "",
+    "membership_level": "Silver",
+    "description": "Development of custom software and technological consulting for small and medium-sized enterprises (SMEs)."
+  },
+  {
+    "business_name": "Artesanías del Norte",
+    "business_tag_name": "Artesanía y Manualidades",
+    "email": "artesanias.norte@example.com",
+    "phone": "+54 261 555-8765",
+    "url": "https://www.artesaniasdelnorte.com",
+    "image": "",
+    "membership_level": "Member",
+    "description": "Creation and sale of traditional handicrafts using autochthonous materials from the Andean region."
+  },
+  {
+    "business_name": "Construcciones Mendoza",
+    "business_tag_name": "Construcción y Obra",
+    "email": "construcciones.mendoza@example.com",
+    "phone": "+54 261 555-4567",
+    "url": "https://www.construccionesmendoza.com",
+    "image": "",
+    "membership_level": "Gold",
+    "description": "Company specialized in the management and execution of residential and industrial construction projects in Mendoza."
+  },
+  {
+    "business_name": "Comercio Regional S.A.",
+    "business_tag_name": "Comercio y Distribución",
+    "email": "comercio.regional@example.com",
+    "phone": "+54 261 555-1122",
+    "url": "https://www.comercioregional.com",
+    "image": "",
+    "membership_level": "Silver",
+    "description": "Distribution and trade of agricultural and manufactured products between Argentine provinces."
+  }
+]

@@ -1,0 +1,134 @@
+@media  (max-width: 600px) {
+
+header{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+    #maintitle{
+        padding: 5%;
+        height: auto;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    #menu {
+        display: block;
+        font-size: 2rem;
+        font-weight:700;
+        text-decoration: none;
+        padding: .5rem .75rem;
+        color: #000;
+    }
+    
+    #menu::before {
+        content: "≡";
+    }
+    
+    nav {
+        background-color: var(--sunglow);
+    }
+    .navigation {
+        list-style: none;
+        display: none;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 760px;
+        height: 100%;
+    }
+    
+    .displayflex{
+        display: flex;
+        width: 100%;
+        
+    }
+    
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+        font-size: clamp(1rem, 2vmin, 1.5rem);
+    }
+    
+    .navigation a:hover, navigation a:active {
+        color: white;
+        background-color: var(--carrot-orange);
+    }
+    
+    .show li {
+        display: block;
+    }
+    
+    #menu.show::before {
+        content: "X";
+    }
+
+/*-------------------------------MAIN--------------------------------*/
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	color: #000;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+nav {
+	background-color: var(--sunglow);
+}
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: var(--carrot-orange);
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+/**--------------------------------------------
+ **               MAIN RESPONSIVE
+ *---------------------------------------------**/
+
+
+}
+
+
+
