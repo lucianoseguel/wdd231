@@ -81,7 +81,7 @@ async function createCards() {
 
         console.log(card1)
     }
-    catch {
+    catch (error) {
         console.error("Fail Loading .json file");
     }
 
@@ -90,3 +90,32 @@ async function createCards() {
 
 
 createCards()
+
+
+
+
+
+const list_button = document.getElementById("list-button")
+const grid_button = document.getElementById("grid-button")
+
+
+let commerce_container = document.getElementById("main-commerce-container")
+
+
+list_button.addEventListener('click', () => {
+
+    console.log("clicked")
+    commerce_container.classList.add("commerce-container-list")
+    commerce_container.classList.remove("commerce-container")
+})
+
+
+grid_button.addEventListener('click', () => {
+
+    console.log("clicked")
+        commerce_container.classList.add("commerce-container")
+    commerce_container.classList.remove("commerce-container-list")
+})
+
+
+

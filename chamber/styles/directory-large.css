@@ -69,12 +69,51 @@ nav a:hover {
 
 /* ----------MAIN CONTENT------------ */
 
+main{
+display: block;
+}
 
 h1 {
 
     text-align: center;
 
 }
+
+
+#display-selector{
+
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 2em;
+
+}
+
+
+#display-selector button{
+background-color: var(--primary_color--);
+padding: 15px 40px;
+
+border: 0;
+border-radius: 60px;
+color: white;
+font-size: larger;
+cursor: pointer;
+transition: all 0.1s ease-in-out;
+}
+
+
+
+#display-selector button:hover{
+    scale: 1.1;
+}
+
+
+
+
+
+
 
 /**------------------------------------------------------------------------
  *                           GRID VIEW
@@ -115,6 +154,59 @@ h1 {
     grid-column: 1 / span 2;
 
 }
+
+
+
+/**------------------------------------------------------------------------
+ *                           LIST VIEW
+ *------------------------------------------------------------------------**/
+
+.commerce-container-list {
+    display: flex;  
+    flex-direction: column;
+    gap: 2em;
+    
+    margin: 2em auto;
+
+}
+
+
+.commerce-container-list article{
+    background-color: var(--seconday_color--);
+    width: 95vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 2em;
+    margin: auto;
+    gap: 1em;
+   
+
+    
+}
+
+
+
+.commerce-container-list article:nth-child(odd){
+    background-color: var(--background_color--);
+
+}
+
+
+
+.commerce-container-list article hr, .commerce-container-list article img{
+
+display: none;
+
+}
+
+
+.commerce-container-list article div {
+overflow: hidden;
+}
+
+
 
 
 
