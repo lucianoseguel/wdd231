@@ -127,6 +127,12 @@ nav {
  **               MAIN RESPONSIVE
  *---------------------------------------------**/
 
+.main-container *{
+
+   max-width: 90vw;
+    flex-direction: column;
+
+}
 
 }
 

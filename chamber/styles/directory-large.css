@@ -67,16 +67,55 @@ nav a:hover {
 
 
 
-
-
-
 /* ----------MAIN CONTENT------------ */
 
 
 h1 {
 
     text-align: center;
+
 }
+
+/**------------------------------------------------------------------------
+ *                           GRID VIEW
+ *------------------------------------------------------------------------**/
+
+.commerce-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: 2em 0;
+    padding: 0 1em;
+    gap: 1rem;
+}
+
+.commerce-container hr {
+    border: 1px solid black;
+    width: 100%;
+    height: 1px;
+}
+
+.commerce-container article {
+    display: grid;
+    grid-template-rows: 20% 20% 40%;
+    grid-template-columns: 40% 1fr;
+    background-color: var(--background_color--);
+    align-items: center;
+    justify-items: center;
+    padding: 1em;
+    text-align: left;
+    height: auto;
+    gap: 0;
+    overflow-wrap: anywhere;
+}
+
+.commerce-container article div:nth-child(1),
+.commerce-container article hr {
+
+    grid-column: 1 / span 2;
+
+}
+
 
 
 
@@ -88,19 +127,19 @@ h1 {
  *---------------------------------------------**/
 
 
-footer{
+footer {
     margin-top: 3em;
     display: flex;
-flex-direction: column;
-background-color: var(--primary_color--);
-width: 100%;
-margin: auto;
+    flex-direction: column;
+    background-color: var(--primary_color--);
+    width: 100%;
+    margin: auto;
 }
 
-footer *{
-margin: 0.5em auto;
+footer * {
+    margin: 0.5em auto;
 }
 
-.ico-footer{
-max-width: 50px;
+.ico-footer {
+    max-width: 50px;
 }
