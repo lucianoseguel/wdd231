@@ -202,8 +202,8 @@ display: none;
 }
 
 
-.commerce-container-list article div {
-overflow: hidden;
+.commerce-container-list article div p {
+overflow-wrap: anywhere;
 }
 
 
@@ -222,7 +222,7 @@ overflow: hidden;
 footer {
     margin-top: 3em;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: var(--primary_color--);
     width: 100%;
     margin: auto;

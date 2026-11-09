@@ -1,17 +1,17 @@
-@media  (max-width: 600px) {
+@media (max-width: 600px) {
 
-header{
+    header {
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 
 
 
-    #maintitle{
+    #maintitle {
         padding: 5%;
         height: auto;
         flex-direction: column;
@@ -21,19 +21,20 @@ header{
     #menu {
         display: block;
         font-size: 2rem;
-        font-weight:700;
+        font-weight: 700;
         text-decoration: none;
         padding: .5rem .75rem;
         color: #000;
     }
-    
+
     #menu::before {
         content: "≡";
     }
-    
+
     nav {
         background-color: var(--sunglow);
     }
+
     .navigation {
         list-style: none;
         display: none;
@@ -42,13 +43,13 @@ header{
         max-width: 760px;
         height: 100%;
     }
-    
-    .displayflex{
+
+    .displayflex {
         display: flex;
         width: 100%;
-        
+
     }
-    
+
     .navigation a {
         display: block;
         padding: 0.75rem;
@@ -59,82 +60,95 @@ header{
         transition: 0.5s;
         font-size: clamp(1rem, 2vmin, 1.5rem);
     }
-    
-    .navigation a:hover, navigation a:active {
+
+    .navigation a:hover,
+    navigation a:active {
         color: white;
         background-color: var(--carrot-orange);
     }
-    
+
     .show li {
         display: block;
     }
-    
+
     #menu.show::before {
         content: "X";
     }
 
-/*-------------------------------MAIN--------------------------------*/
-#menu {
-	display: block;
-	font-size: 2rem;
-	font-weight:700;
-	text-decoration: none;
-	padding: .5rem .75rem;
-	color: #000;
-}
+    /*-------------------------------MAIN--------------------------------*/
+    #menu {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        text-decoration: none;
+        padding: .5rem .75rem;
+        color: #000;
+    }
 
-#menu::before {
-	content: "≡";
-}
+    #menu::before {
+        content: "≡";
+    }
 
-nav {
-	background-color: var(--sunglow);
-}
-.navigation {
-	list-style: none;
-	margin: 0 auto;
-	max-width: 760px;
-}
+    nav {
+        background-color: var(--sunglow);
+    }
 
-.navigation li {
-	display: none;
-}
-.navigation a {
-	display: block;
-	padding: 0.75rem;
-	text-align: left;
-	text-decoration: none;
-	color: black;
-	font-weight: 700;
-	transition: 0.5s;
-	font-size: clamp(1rem, 2vmin, 1.5rem);
-}
+    .navigation {
+        list-style: none;
+        margin: 0 auto;
+        max-width: 760px;
+    }
 
-.navigation a:hover, navigation a:active {
-	color: white;
-	background-color: var(--carrot-orange);
-}
+    .navigation li {
+        display: none;
+    }
 
-.show li {
-	display: block;
-}
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+        font-size: clamp(1rem, 2vmin, 1.5rem);
+    }
 
-#menu.show::before {
-	content: "X";
-}
+    .navigation a:hover,
+    navigation a:active {
+        color: white;
+        background-color: var(--carrot-orange);
+    }
 
-/**--------------------------------------------
+    .show li {
+        display: block;
+    }
+
+    #menu.show::before {
+        content: "X";
+    }
+
+    /**--------------------------------------------
  **               MAIN RESPONSIVE
  *---------------------------------------------**/
 
-.main-container *{
+    .main-container * {
 
-   max-width: 90vw;
-    flex-direction: column;
+        max-width: 90vw;
+        flex-direction: column;
 
+    }
+
+
+
+    /**--------------------------------------------
+ *               FOOTER
+ *---------------------------------------------**/
+
+footer{
+
+flex-direction: column;
 }
 
+
 }
-
-
-

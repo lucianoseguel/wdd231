@@ -2,7 +2,7 @@
   {
     "business_name": "Bodegas del Valle",
     "business_tag_name": "Viticulture & Wine",
-    "email": "bodegasvalle@example.com",
+    "email": "bodegasvalle@outlook.com",
     "phone": "+54 261 555-1234",
     "url": "https://www.bodegasdelvalle.com.ar",
     "image": "images/Bodegas del Valle.png",
@@ -12,7 +12,7 @@
   {
     "business_name": "Muebles Modernos Mendoza",
     "business_tag_name": "Furniture & Home Decor",
-    "email": "muebles.mendoza@example.com",
+    "email": "muebles.mendoza@outlook.com",
     "phone": "+54 261 555-5678",
     "url": "https://www.mueblesmodernos.com.ar",
     "image": "images/Muebles Modernos Mendoza.png",
@@ -22,7 +22,7 @@
   {
     "business_name": "Café Central",
     "business_tag_name": "Gastronomy & Coffee Shops",
-    "email": "cafe.central@example.com",
+    "email": "cafe.central@outlook.com",
     "phone": "+54 261 555-9012",
     "url": "https://www.cafecentralmendoza.com",
     "image": "images/Café Central.png",
@@ -32,7 +32,7 @@
   {
     "business_name": "Servicios Legales Andinos",
     "business_tag_name": "Legal Services & Consulting",
-    "email": "legales.andinos@example.com",
+    "email": "legales.andinos@outlook.com",
     "phone": "+54 261 555-3456",
     "url": "https://www.legalesandinos.com",
     "image": "images/Servicios Legales Andinos.png",
@@ -42,7 +42,7 @@
   {
     "business_name": "Textiles del Sur",
     "business_tag_name": "Textiles & Apparel",
-    "email": "textilesdelsur@example.com",
+    "email": "textilesdelsur@outlook.com",
     "phone": "+54 261 555-7890",
     "url": "https://www.textilesdelsur.com",
     "image": "images/Textiles del Sur.png",
@@ -52,7 +52,7 @@
   {
     "business_name": "TecnoSoluciones IT",
     "business_tag_name": "Technology & Software",
-    "email": "tecnosoluciones@example.com",
+    "email": "tecnosoluciones@outlook.com",
     "phone": "+54 261 555-2345",
     "url": "https://www.tecnosoluciones.com",
     "image": "images/TecnoSoluciones IT.png",
@@ -62,7 +62,7 @@
   {
     "business_name": "Artesanías del Norte",
     "business_tag_name": "Arts & Crafts",
-    "email": "artesanias.norte@example.com",
+    "email": "artesanias.norte@outlook.com",
     "phone": "+54 261 555-8765",
     "url": "https://www.artesaniasdelnorte.com",
     "image": "images/Artesanías del Norte.png",
@@ -72,7 +72,7 @@
   {
     "business_name": "Construcciones Mendoza",
     "business_tag_name": "Construction & Building",
-    "email": "construcciones.mendoza@example.com",
+    "email": "construcciones.mendoza@outlook.com",
     "phone": "+54 261 555-4567",
     "url": "https://www.construccionesmendoza.com",
     "image": "images/Construcciones Mendoza.png",
@@ -82,7 +82,7 @@
   {
     "business_name": "Comercio Regional S.A.",
     "business_tag_name": "Trade & Distribution",
-    "email": "comercio.regional@example.com",
+    "email": "comercio.regional@outlook.com",
     "phone": "+54 261 555-1122",
     "url": "https://www.comercioregional.com",
     "image": "images/Comercio Regional S.A.png",
