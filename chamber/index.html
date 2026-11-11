@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Web Frontend Development</title>
+
+    <!-- --------------
+    Meta links en el head 
+-------------------->
+
+    <meta name="description"
+        content="Mendoza Chamber of commerce to connect local bussiness with local people here in mendoza">
+    <meta name="author" content="Luciano Seguel">
+    <meta property="og:title" content="Mendoza Chamber of commerce">
+    <meta property="og:description"
+        content="Mendoza Chamber of commerce to connect local bussiness with local people here in mendoza">
+    <meta property="og:url" content="https://www.mendozachamberofcommerce.com.ar/">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:image"
+        content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-7IphNfjpv2972q_TC12u8RXnrtI4z4sb_nIodNpCslC6WZcW4NhklBk&s=10">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mendoza COC">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/directory-large.css">
+    <link rel="stylesheet" href="styles/directory-base.css">
+    <link rel="stylesheet" href="styles/index.css">
+
+    <link rel="shortcut icon" href="images/mendoza-logo.png" type="image/png">
+
+
+
+</head>
+
+<body>
+    <header>
+        <img src="images/mendoza-logo.png" alt="Site Logo" width="50" height="50">
+        <span>Mendoza Chamber of commerce</span>
+        <a href="#" id="menu"></a>
+        <nav class="navigation">
+
+            <a href="#" class="active">Home</a>
+            <a href="chamber/directory.html">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+
+
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero-section">
+            <!--  This is the hero section -->
+            <img src="images/hero-image.webp" alt="Mendoza (hero)">
+            <h1>Welcome to Mendoza Chamber of Commerece</h1>
+            <p>We have created a dynamic resource center designed exclusively for Mendoza businesses. Here, you will
+                find everything you need: from a complete event calendar to unique networking opportunities and updated
+                commercial directories. Our commitment is simple: to drive your business growth, strengthen local
+                consumption, and help Mendoza thrive together.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>Mendoza chamber of commerce</p>
+            <p>Martinez de Rosas 1450</p>
+            <p>Mendoza Argentina</p>
+
+        </div>
+        <div>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/github-ico.png" alt="GitHub" class="ico-footer">
+            </a>
+            <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/youtube-ico.png" alt="Youtube" class="ico-footer">
+            </a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram-ico.png" alt="Instagram" class="ico-footer">
+            </a>
+        </div>
+
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>&copy; <span id="currentyear"></span> | Luciano Seguel | Mendoza, Argentina</p>
+        </div>
+
+        <div>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/directory.js"></script>
+</body>
+
+</html>
