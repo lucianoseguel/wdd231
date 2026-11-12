@@ -5,7 +5,7 @@
     --seconday_color--: #ccd5aeff;
     --background_color--: #faedcdff;
     --font_color--: #faedcdff;
-    --alternative_font_color--: #727171;
+    --alternative_font_color--: #3a3a3a;
 
 
 
@@ -22,11 +22,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    
+
     justify-items: center;
     height: 70vh;
     align-items: center;
 }
+
 
 #hero-section img {
     position: absolute;
@@ -34,23 +35,41 @@
 
 }
 
-#hero-section h1{
+#hero-section h1 {
     position: relative;
-    background-color: var(--background_color--);
     color: var(--alternative_font_color--);
+    background-color: var(--background_color--);
     display: block;
     padding: 10px 20px;
-    max-width: 50%;
-    border-radius: 40px;
+    width: 100vw;
+    font-size: 50px;
     grid-column-start: 1;
     grid-column-end: 3;
 
 }
-#hero-section p{
 
-position: relative;
-background-color: var(--background_color--);
-max-width: 70%;
-padding: 20px;
-border-radius: 30px;
+#hero-section p {
+
+    position: relative;
+    background-color: var(--background_color--);
+    max-width: 70%;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: larger;
+}
+
+#hero-section a {
+    position: relative;
+    background-color: var(--background_color--);
+    border: 0;
+    border-radius: 45px;
+    font-size: 55px;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    color: var(--alternative_font_color--);
+}
+
+#hero-section a:hover {
+    background-color: var(--primary_color--);
 }

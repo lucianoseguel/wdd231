@@ -48,7 +48,7 @@ async function createCards() {
     try {
         const commerces = await loadingJSON("members.json")
         console.log(commerces)
-
+                
 
         let grid_container = document.querySelector(".commerce-container")
 
