@@ -22,8 +22,9 @@
 
 }
 
-#hero-section h1 {
+#hero-section h2 {
     position: relative;
+    text-align: center;
     color: black;
     background-color: var(--background_color--);
     display: block;
