@@ -9,7 +9,7 @@ async function getWeather() {
     console.log(data)
 
     return {
-        temp: data.main.temp + '°C',
+        temp: Math.round( data.main.temp) + '°C',
         description: data.weather[0].description.toUpperCase(),
         icon: data.weather[0].icon,
         wind: data.wind.speed + ' m/s',
@@ -36,6 +36,9 @@ async function weatherTable(){
     const weatherIcon = document.createElement('img')
     weatherIcon.src = `https://openweathermap.org/payload/api/media/file/${weather.icon}.png`
     weatherIcon.alt = weather.description
+
+    const weatherTemperature = document.createElement('p')
+    weatherTemperature.textContent = `${weather.temp}`
     
 
     const weatherInfo = document.createElement('div')
@@ -51,6 +54,7 @@ async function weatherTable(){
     `
 
     weatherContainer.appendChild(weatherIcon)
+    weatherContainer.appendChild(weatherTemperature)
     weatherContainer.appendChild(weatherInfo)
 
 
