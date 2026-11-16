@@ -6,9 +6,6 @@
     --background_color--: #faedcdff;
     --font_color--: #faedcdff;
     --alternative_font_color--: #3a3a3a;
-
-
-
 }
 
 
@@ -72,4 +69,46 @@
 
 #hero-section a:hover {
     background-color: var(--primary_color--);
+}
+
+
+/**--------------------------------------------
+ *               WEATHER CONTAINER
+ *---------------------------------------------**/
+
+#weather-section{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+
+#weather-section h2{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: var(--alternative_font_color--);
+    font-size: 2rem;
+
+}
+
+
+.weather-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40vw;
+    justify-content: center;
+    background-color: var(--background_color--);
+    border-radius: 20px;
+
+    
+    border: 3px solid var(--primary_color--);
+}
+
+.weather-container img{
+
+    max-width: 100%;
 }

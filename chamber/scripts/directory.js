@@ -46,7 +46,7 @@ async function loadingJSON(file_url) {
 
 async function createCards() {
     try {
-        const commerces = await loadingJSON("members.json")
+        const commerces = await loadingJSON("data/members.json")
         console.log(commerces)
                 
 
