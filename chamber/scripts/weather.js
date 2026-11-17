@@ -9,12 +9,12 @@ async function getWeather() {
     console.log(data)
 
     return {
-        temp: Math.round( data.main.temp) + '°C',
+        temp: Math.round( data.main.temp) + '°C 🌡️',
         description: data.weather[0].description.toUpperCase(),
         icon: data.weather[0].icon,
-        wind: data.wind.speed + ' m/s',
-        humidity: data.main.humidity + '%',
-        pressure: data.main.pressure + 'hPa',
+        wind: data.wind.speed + ' m/s 🍃' ,
+        humidity: data.main.humidity + '% 💧',
+        pressure: data.main.pressure + 'hPa 📈',
     }
     
 }
