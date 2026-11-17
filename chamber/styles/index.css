@@ -68,10 +68,46 @@
  *               EVENTS SECTION
  *---------------------------------------------**/
 
- .event-section{
-display: grid;
-grid-template-rows: 1fr 1fr;
-grid-template-columns: 1fr;
+
+
+.event-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.event-section h2 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: var(--alternative_font_color--);
+    font-size: 2rem;
+}
+
+.event-container{
+display: flex;
+flex-direction: row;
+max-width: 100vw;
+
+gap: 2em;
+padding: 1em 2em;
+margin: auto;
+overflow: scroll;
+
+}
+
+.event-container div{
+display: flex;
+flex-direction: column;
+min-width: 300px;
+max-width: 300px;
+
+padding: 1em;
+border: var(--primary_color--) 3px solid;
+background-color: var(--background_color--);
+border-radius: 20px;
 
 }
 
@@ -109,7 +145,7 @@ grid-template-columns: 1fr;
     background-color: var(--background_color--);
     border-radius: 20px;
     margin: 2em 0;
-    height:fit-content;
+    height: fit-content;
     border: 3px solid var(--primary_color--);
     overflow: hidden;
 }
@@ -117,16 +153,17 @@ grid-template-columns: 1fr;
 .weather-container img {
 
     width: 150px;
-    
-}
-.weather-container > p{
-font-size: 30px;
 
 }
+
+.weather-container>p {
+    font-size: 30px;
+
+}
+
 .weather-info {
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 2;
     grid-column-end: 3;
 }
-

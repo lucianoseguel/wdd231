@@ -36,9 +36,11 @@ async function weatherTable(){
     const weatherIcon = document.createElement('img')
     weatherIcon.src = `https://openweathermap.org/payload/api/media/file/${weather.icon}.png`
     weatherIcon.alt = weather.description
-
+    //Get only the temperature from the API and create a p element to display it
     const weatherTemperature = document.createElement('p')
     weatherTemperature.textContent = `${weather.temp}`
+
+    
     
 
     const weatherInfo = document.createElement('div')
@@ -52,6 +54,8 @@ async function weatherTable(){
         <p>Humidity: ${weather.humidity}</p>
         <p>Pressure: ${weather.pressure}</p>
     `
+
+
 
     weatherContainer.appendChild(weatherIcon)
     weatherContainer.appendChild(weatherTemperature)
