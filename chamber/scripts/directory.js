@@ -16,7 +16,7 @@ current_year.textContent = new Date().getFullYear()
 //Requesting json information
 
 
-let jsonfilename = "members.json"
+let jsonfilename = "data/members.json"
 
 
 
@@ -47,8 +47,8 @@ async function loadingJSON(file_url) {
 async function createCards() {
     try {
         const commerces = await loadingJSON("data/members.json")
-        console.log(commerces)
-                
+        //console.log(commerces)
+
 
         let grid_container = document.querySelector(".commerce-container")
 
@@ -89,33 +89,9 @@ async function createCards() {
 }
 
 
-createCards()
 
 
 
-
-
-const list_button = document.getElementById("list-button")
-const grid_button = document.getElementById("grid-button")
-
-
-let commerce_container = document.getElementById("main-commerce-container")
-
-
-list_button.addEventListener('click', () => {
-
-    console.log("clicked")
-    commerce_container.classList.add("commerce-container-list")
-    commerce_container.classList.remove("commerce-container")
-})
-
-
-grid_button.addEventListener('click', () => {
-
-    console.log("clicked")
-        commerce_container.classList.add("commerce-container")
-    commerce_container.classList.remove("commerce-container-list")
-})
 
 
 
@@ -128,4 +104,123 @@ grid_button.addEventListener('click', () => {
 
 
 
-async function getRandomMembers() {
+async function getRandomMembers(filename) {
+
+    const commerces = await loadingJSON(filename)
+
+    const premiumMembers = commerces.filter(member => member.membership_level == "Gold" || member.membership_level == "Silver")
+
+    // console.log(premiumMembers)    
+
+    let members_array = []
+    let counter_random = 0
+
+    premiumMembers.forEach(member => {
+        members_array.push(member)
+
+
+    })
+    //console.log(random_members)
+
+    let random_members = [] //Creating Array for random members
+
+    //Creating the random array complete
+    while (counter_random < 3) {
+
+        let random_place = Math.floor(Math.random() * members_array.length)
+
+        if (!random_members.includes(members_array[random_place]) ){
+        random_members.push(members_array[random_place])
+        counter_random += 1
+        }
+       
+        
+    }
+
+    //console.log(random_members)
+
+    return random_members
+
+
+
+}
+
+/**--------------------------------------------
+ *               CREATING RANDOM MEMBER CARDS
+ *---------------------------------------------**/
+
+async function creationMemberCards(){
+
+    const members = await getRandomMembers(jsonfilename)
+    console.log( members  )
+
+    let members_container = document.getElementById("members-section")
+
+    members.forEach(member => {
+
+        const member_card = `
+        <div>
+        <img src="${member.image}" alt="${member.business_name}">
+        <p>${member.business_name}</p>
+        <p> Level: ${member.membership_level} </p>
+        </div>
+        `
+
+        members_container.innerHTML += member_card
+    })
+}
+
+
+/**============================================
+ *               MAIN FUNCTION
+ *=============================================**/
+
+function main() {
+
+
+
+    const list_button = document.getElementById("list-button")
+    const grid_button = document.getElementById("grid-button")
+
+
+    let commerce_container = document.getElementById("main-commerce-container")
+
+
+    list_button?.addEventListener('click', () => {
+
+        console.log("clicked")
+        if (commerce_container.classList.contains("commerce-container")) {
+            commerce_container.classList.toggle("commerce-container")
+            commerce_container.classList.toggle("commerce-container-list")
+
+
+
+        }
+
+    })
+
+
+    grid_button?.addEventListener('click', () => {
+
+        console.log("clicked")
+        if (commerce_container.classList.contains("commerce-container-list")) {
+            commerce_container.classList.toggle("commerce-container")
+            commerce_container.classList.toggle("commerce-container-list")
+
+
+
+        }
+    })
+
+
+    createCards()
+
+
+    creationMemberCards()
+
+
+}
+
+
+
+main()

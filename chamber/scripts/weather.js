@@ -151,6 +151,30 @@ async function weatherTable() {
 }
 
 
+/**--------------------------------------------
+ *               GETJSONFILE
+ *---------------------------------------------**/
+async function loadingJSON(file_url) {
+
+    const requesturl = file_url
+
+    const request = new Request(requesturl)
+
+    const response = await fetch(request)
+
+    if (!response.ok) {
+        throw new Error(`Error HTTP: ${response.status} .`);
+    }
+
+    let commerces = await response.json()
+    //console.log(commerces)
+    return commerces
+
+
+}
+
+
+
 
 async function main() {
 

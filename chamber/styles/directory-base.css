@@ -173,20 +173,31 @@
 
 
     /**============================================
-     *               WEATHER RESPONSIVE HOME.HTML
+     *               WEATHER RESPONSIVE INDEX.HTML (HOME)
      *=============================================**/
 
-     .weather-container {
+    .weather-container {
         display: flex;
         flex-direction: column;
         width: 90vw;
-    
+
     }
 
     .weather-container img {
         max-width: 100%;
     }
 
+
+    /**============================================
+ *               MEMBERS SECTION INDEX.HTML (HOME)
+ *=============================================**/
+
+    #members-section {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin: 2em auto;
+    }
 
 
 
