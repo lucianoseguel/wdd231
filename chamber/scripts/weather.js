@@ -151,6 +151,7 @@ async function weatherTable() {
 }
 
 
+
 async function main() {
 
     weatherTable()

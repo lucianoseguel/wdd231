@@ -119,3 +119,13 @@ grid_button.addEventListener('click', () => {
 
 
 
+
+
+
+/**--------------------------------------------
+ *               RANDOM MATH FOR MEMBERS GOLD AND SILVER
+ *---------------------------------------------**/
+
+
+
+async function getRandomMembers() {
