@@ -9,7 +9,7 @@ const nextdays_url = `https://api.openweathermap.org/data/2.5/forecast?lat=${-32
 async function getWeather() {
     const response = await fetch(api_url)
     const data = await response.json()
-    console.log(data)
+   // console.log(data)
 
 
 
@@ -69,7 +69,7 @@ async function getNextDaysWeather() {
                 day: weekday
 
             }
-            console.log(weatherday)
+            //console.log(weatherday)
             nextdays.push(weatherday)
         }
     })
