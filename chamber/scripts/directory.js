@@ -79,10 +79,9 @@ async function createCards() {
 
 
 
-        console.log(card1)
     }
     catch (error) {
-        console.error("Fail Loading .json file");
+        console.log("Fail Loading .json file");
     }
 
 
@@ -152,7 +151,7 @@ async function getRandomMembers(filename) {
 async function creationMemberCards(){
 
     const members = await getRandomMembers(jsonfilename)
-    console.log( members  )
+    //console.log( members  )
 
     let members_container = document.getElementById("members-section")
 
