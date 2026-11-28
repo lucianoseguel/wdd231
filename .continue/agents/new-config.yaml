@@ -1,0 +1,13 @@
+name: Local Config
+version: 1.0.0
+schema: v1
+
+models:
+  - name: Qwen 2.5 Coder 1.5B-instruct
+    provider: ollama
+    model: qwen2.5-coder-1.5b-instruct
+    roles:
+      - autocomplete
+      - chat
+      - edit
+      - apply

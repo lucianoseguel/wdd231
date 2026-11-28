@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mendoza Chamber of commerce</title>
+
+    <!-- --------------
+    Meta links en el head 
+-------------------->
+
+    <meta name="description"
+        content="Mendoza Chamber of commerce to connect local bussiness with local people here in mendoza">
+    <meta name="author" content="Luciano Seguel">
+    <meta property="og:title" content="Mendoza Chamber of commerce">
+    <meta property="og:description"
+        content="Mendoza Chamber of commerce to connect local bussiness with local people here in mendoza">
+    <meta property="og:url" content="https://www.mendozachamberofcommerce.com.ar/">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:image" content="https://lucianoseguel.github.io/wdd231/chamber/images/chamber-image.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mendoza COC">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/directory-large.css">
+    <link rel="stylesheet" href="styles/directory-base.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <link rel="shortcut icon" href="images/mendoza-logo.png" type="image/png">
+
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script type="module" src="scripts/weather.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/mendoza-logo.png" alt="Site Logo" width="50" height="50">
+        <span>Join - Mendoza Chamber of Commerce</span>
+        <a href="#" id="menu"></a>
+        <nav class="navigation">
+
+            <a href="#" class="active">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+
+
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="join-h1">JOIN</h1>
+        <section id="form-section">
+
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div>
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" id="name" placeholder="John">
+                    </div>
+                    <div>
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname">
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="number" name="phone" id="phone">
+                    </div>
+                
+
+
+
+                </fieldset>
+                <fieldset>
+                    <legend>Organization information</legend>
+
+                        <div>
+                        <label for="orgnaization">Organization Name</label>
+                        <input type="text" name="organization" id="organization">
+                    </div>
+                    <div>
+                        <label for="membership">Membership Level</label>
+                        <select name="membership" id="membership">
+                            <option value="Gold">Gold</option>
+                            <option value="Silver">Silver</option>
+                            <option value="Bronze">Bronze</option>
+                            <option value="Free">Free</option>
+
+                    </div>
+                </fieldset>
+                <input type="hidden" name="timestamp">
+
+                <button type="submit">Submit</button>
+
+                
+            </form>
+        </section>
+        <section id="member-level-section">
+
+
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>Mendoza chamber of commerce</p>
+            <p>Martinez de Rosas 1450</p>
+            <p>Mendoza Argentina</p>
+        </div>
+        <div>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/github-ico.png" alt="GitHub" class="ico-footer">
+            </a>
+            <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/youtube-ico.png" alt="Youtube" class="ico-footer">
+            </a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram-ico.png" alt="Instagram" class="ico-footer">
+            </a>
+        </div>
+
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>&copy; <span id="currentyear"></span> | Luciano Seguel | Mendoza, Argentina</p>
+        </div>
+
+        <div>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
